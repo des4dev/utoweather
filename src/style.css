@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: #191919;
+}
+#rainy {
+    background: url('rain.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#sunny {
+    background: url('sunny.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 26px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 26px;
+    gap: 10px;
+    background: #262626;
+    border: 1px solid #363636;
+    border-radius: 16px;
+}
+.card:hover {
+    scale: 1.05;
+    transform: rotate(2deg);
+    transition: 400ms;
+}
+.card__contents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 30%;
+}
+.card__content {
+    display: flex;
+    flex-direction: row;
+    gap: 53px;
+}
+.card__content p {
+    font-weight: 800;
+    font-size: 64px;
+    color: #ADADAD;
+    margin: 0px;
+}
+.card__texts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.card__texts p, .card__header p {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+h2 {
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 116px;
+    color: #CFCFCF;    
+}
+@media only screen and (max-width: 1145px) {
+    .cards {
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 960px) {
+    h2 {
+        font-size: 76px;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+}
